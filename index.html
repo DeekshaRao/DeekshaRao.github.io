@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dfa8f9da97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onClick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onClick="openmenu()"></i>
+               
+            </nav>
+            <div class="row">
+                <div class="header-text">
+                    <p>UI/UX Developer</p>
+                    <h1>Hi, I am <span>Deeksha UM</span></h1>
+                </div>
+                <div class="header-img">
+                   <img src="images/background1.png"/>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------About ----------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png" class="bg-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Seasoned and independent Web Developer with 5 years of Experience in blending the art of design with 
+                        skill programming to deliver the immersive and engaging user experience through efficient website
+                         development, proactive feature organization, and relentless debugging.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onClick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onClick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span> <br> 
+                                <div class="skill-score">
+                                    <div class="skills html">90%</div>
+                                  </div>
+                            </li>
+                            <li><span>CSS</span> <br> 
+                                <div class="skill-score">
+                                    <div class="skills css">90%</div>
+                                </div>
+                            </li>
+                            <li><span>Bootstrap</span> <br> 
+                                <div class="skill-score">
+                                    <div class="skills bootstrap">90%</div>
+                                </div>
+                            </li>
+                            <li><span>Javascript</span> <br> 
+                                <div class="skill-score">
+                                    <div class="skills javascript">70%</div>
+                                </div>
+                            </li>
+                            <li><span>Angular</span> <br> 
+                                <div class="skill-score">
+                                    <div class="skills angular">70%</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 May - 2022 Nov</span> <br> Software Engineer 2 at Epsilon</li>
+                            <li><span>2021 Apr - 2022 Apr</span> <br> UI Engineer at Neoastra</li>
+                            <li><span>2019 Apr - 2021 Apr</span> <br> UI Engineer at Brillio</li>
+                            <li><span>2017 Aug - 2018 Dec</span> <br> Project Trainee at MSYS Technologies</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017</span> <br> Bachelor of Engineering</li>
+                            <li><span>2023</span> <br> UI/UX Design Course at Coursera</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------- Services ---------------------------------------------------------------->
+    <div id="expertise">
+        <div class="container">
+            <h1 class="subtitle">My Expertise</h1>
+            <div class="services-list">
+                <div class="services">
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Developement</h2>
+                    <p>Web development is closely related to the job of designing the features and functionality of websites and apps. 
+                        Web Developers built those sites, making sure they functioned properly and performed in ways that allowed for a 
+                        great user experience. Web Developers do this by writing lines of code, 
+                        using a variety of programming languages, which vary depending on the tasks
+                         they are performing and the platforms they are working on.</p>
+                        
+                </div>
+                <div class="services">
+                    <i class="fa-brands fa-angular"></i>
+                    <h2> Angular Developement</h2>
+                    <p>Angular is a development platform, built on TypeScript. 
+                        When you build applications with Angular, you're taking advantage of a platform
+                         that can scale from single-developer projects to enterprise-level applications.
+                         Angular is designed to make updating as easy as possible, so you can take advantage of the latest developments with a minimum of effort.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------  Portfolio ------------------------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Digifutura App</h3>
+                        <p> Digital Transformation through UX Design, Application Development, ROR Development, AI and Machine Learning.<br/>
+                            DigiFutura is an innovation application development company focused to create compelling user experience design 
+                            digital experiences and building topnotch highly scalable web and mobile applications for startups and SME's. 
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work2">
+                    <div class="layer">
+                        <h3>Fuel App</h3>
+                        <p> With our customer-centric approach, we deliver 'Excellence' at every level of our collaboration and this is what fuels Brillio's growth story.
+                            Brillio’s managed services provides offers end-to-end management of the entire enterprise infrastructure to fuel Target Operating Models
+                             that are aligned to business needs and established by right standards and right integrations across people, process, tools and technology. 
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work3">
+                    <div class="layer">
+                        <h3>Neo Living App</h3>
+                        <p> Neoliving is AI-powered platform for devices and systems to manage and control home appliances, security systems, and entertainment systems. 
+                            AI powered smart devices are network-based control solution that incorporates communication between various switches and loads. 
+                            The features include send messages from any device to any device at enterprise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------- contact --------------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">  
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i></i>deekumrao@gmail.com</p>
+                    <!-- <p><i class="fa-sharp fa-solid fa-phone"></i>5147781714</p> -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/deeksha-um-aa542812a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/deekrao_1417/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/My_CV.pdf" class="btn btn-2" download>  Download CV </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = '0';
+
+        }
+        function closemenu(){
+            sidemenu.style.right = '-200px';
+            
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyknOXxFXIVP9VamaZP5GbXCaCPCxurtrTwccwOiLQdMCs3XipiO0MRUHc6-a-0zT1w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
